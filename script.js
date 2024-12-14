@@ -1,6 +1,6 @@
 (async function() {
     try {
-        const response = await fetch('MS data.xlsx');
+        const response = await fetch('CB protein MS data.xlsx');
         const arrayBuffer = await response.arrayBuffer();
         const workbook = XLSX.read(arrayBuffer, {type: 'array'});
         const firstSheetName = workbook.SheetNames[0];
